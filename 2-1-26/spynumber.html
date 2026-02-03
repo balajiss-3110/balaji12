@@ -1,0 +1,26 @@
+<script>
+    var arr=[6,28,29,31]
+ 
+    for(var i=0;i<arr.length;i++){
+        var n = arr[i]
+        var temp=n
+    var sum =0;
+    var product =1;
+    
+    while(n>0){
+         var rem=n%10
+        sum=sum+rem
+        product=product*rem
+        n=parseInt(n/10)
+}
+        if(sum==product){
+            document.write(temp+"    syp number"+"<br>")
+        }
+        else{
+            document.write(temp+   "    not syp number"+"<br>" )
+        }  
+   }
+</script>
+
+
+

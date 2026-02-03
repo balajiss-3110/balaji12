@@ -1,0 +1,19 @@
+<script>
+    var arr=[6,28,29,31,59,153]
+ 
+    for(var i=0;i<arr.length;i++){
+       let n = arr[i]
+let temp = n, sum = 0;
+
+while (n > 0) {
+    let r = n % 10;
+    sum += r * r * r;
+    n = parseInt(n / 10);
+}
+
+if (sum == temp)
+    document.write(temp+  "   Armstrong Number"+"<br>");
+else
+    document.write(temp +"Not Armstrong  Number"+"<br>");   
+   }
+</script>

@@ -1,0 +1,19 @@
+<script>
+    var arr=[6,28,29,31]
+ 
+    for(var i=0;i<arr.length;i++){
+           var n = arr[i]
+        var sum =0;
+        for(var j=1;j<n;j++){
+            if(n%j==0){
+                sum=sum+j;
+            }
+        }
+        if (sum==n){
+            document.write(n+"perfect number"+"<br>");
+        }
+        else{
+            document.write(n+"    not perfect number "+"<br>")
+        }
+   }
+</script>
