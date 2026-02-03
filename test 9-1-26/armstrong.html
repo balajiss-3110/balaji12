@@ -1,0 +1,19 @@
+<script>
+    var n=parseInt(prompt("enter number :"))
+    var num=n;
+    var sum=0;
+    while(n>0)
+{
+    rem=n%10;
+    sum=sum+rem*rem*rem;
+    n=parseInt(n/10);
+}
+if(num==sum)
+{
+    document.write("Armstrong number :"+num)
+}
+else
+{
+    document.write("not armstrong number :"+num)
+}
+</script>

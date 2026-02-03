@@ -1,0 +1,21 @@
+<script>
+    var n = parseInt(prompt("enter the number "))
+    var d=n;
+    var sum =0;
+    var product =1;
+    
+    while(n>0){
+         var rem=n%10
+        sum=sum+rem
+        product=product*rem
+        n=parseInt( n/10)
+}
+var c= sum+ product;
+        if(c == d){
+            document.write("special number")
+        }
+        else{
+            document.write("not specila number" )
+        }
+    
+</script>
