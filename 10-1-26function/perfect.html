@@ -1,0 +1,24 @@
+<script>
+    var n=parseInt(prompt("enter number :"))
+    function perfect(n){
+    var sum=0
+    
+    for(var i=1;i<n;i++)
+{
+    if(n%i==0)
+{
+
+    sum=sum+i
+}}
+return sum;
+    }
+    var sum=perfect(n);
+if(sum==n)
+{
+    document.write("perfect number :"+n)
+}
+else
+{
+    document.write("not perfect number :"+n)
+}
+</script>

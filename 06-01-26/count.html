@@ -1,0 +1,16 @@
+<script>
+var a = [1234, 5678, 9876];
+
+for (var i = 0; i < a.length; i++) {
+    var n = a[i];
+    var sum = 0;
+
+    while (n > 0) {
+        var rem = n % 10;
+        sum = sum + rem;
+        n = parseInt(n / 10);
+    }
+
+    document.write("Sum of digits of " + a[i] + " = " + sum + "<br>");
+}
+</script>

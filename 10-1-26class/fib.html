@@ -1,0 +1,18 @@
+<script>
+class Fibonacci {
+    series(n) {
+        var a = 0, b = 1, c;
+
+        for (var i = 1; i <= n; i++) {
+            document.write(a + "<br>");
+            c = a + b;
+            a = b;
+            b = c;
+        }
+    }
+}
+
+var n = parseInt(prompt("Enter number of terms:"));
+let obj = new Fibonacci();
+obj.series(n);
+</script>
